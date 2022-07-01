@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>SPC PUTTUR </title>
+<link rel="stylesheet" href="./assests/styles.css"/>
+</head>
+<style>
+    body{
+        background-color: rgb(233, 233, 233);
+        color: #373737;
+    }
+    .slider{
+        width: 100%;
+    height: auto;
+    }
+    .slider_img{
+     object-fit: fill;
+    width: -webkit-fill-available;
+    /* height: 500px; */
+    }
+    .left-click{
+        position: relative;
+        top:-150;
+        font-size:large;
+        font-weight: bolder;
+       color: aliceblue;
+        font-size: -webkit-xxx-large;
+    }
+    .right-click{
+        top: -150;
+    float: right;
+    position: relative;
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: -webkit-xxx-large;
+    }
+    .right-click:hover,.left-click:hover{
+        cursor: pointer;
+    }
+    .about-container{
+        margin-left: 2%;
+        margin-right: 2%;
+       
+    }
+    .about{
+        /* width: 800px; */
+        height: auto;
+        background-color: ffffff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 3%;
+    }
+    .about-content{
+        margin: 60px 50px;
+    }
+    .about-college{
+        display: flex;
+        margin-bottom: 100px;
+    }
+    .notification{
+        background-color: blue;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #ffffff;
+        display: flex;
+        place-items: center;
+    }
+    .about-college-noticeboard{
+        display: flex;
+        max-width: 30%;
+    }
+    .about-college-noticeboard-text{
+        
+        background-color: #062f6d;
+        padding: 25px;
+        box-shadow: 2px 3px 5px 1px #5353e1;
+        color: #fff;
+        height: fit-content;
+    }
+    .about-college-pdf{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 5px;
+        flex-wrap: wrap;
+
+    }
+    .pdf{
+     background-color: rgb(170, 170, 170);
+    margin-left: 1%;
+    padding: 10px;
+    padding-left: 3%;
+    border-radius: 10px;
+    
+    }
+    .pdf >h2{
+        margin-top: 10px;
+    }
+    .course-contianer{
+        margin: 5% 3%;
+        text-align: center;
+    }
+    .course{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .course-heading{
+        margin-bottom: 30px;
+    }
+    .card{
+        box-shadow: 2px 4px 4px 3px #cccc;
+        background-color: #062f6d;
+        color: #fff;
+        flex: .4;
+        margin-top: 10px;
+        
+    }
+    .card-content{
+        padding: 20px;
+    }
+    .card-content >h1, .card-content >p ,.card-content >button{
+        margin-top: 10px;
+    }
+    .card-button{
+        height: 36px;
+    width: 110px;
+    border-radius: 5px;
+    outline-style: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 2px;
+    }
+    .card-button:hover{
+        cursor: pointer;
+    }
+    .footer{
+        background-color: #000;
+        display: flex;
+        height: 50px;
+        place-items: center;
+        color: #fff;
+    }
+    @media only screen and (max-width:600px){
+        .course{
+            flex-direction:column;
+        }
+        .about-college{
+            
+            flex-direction: column;
+        }
+        .about-college-noticeboard{
+            margin-top: 20px;
+        }
+        .pdf{
+            flex: 5 30%;
+            margin-top:3% ;
+    margin-left: 2%;
+        }
+        
+    }
+    /* .pdf{
+        flex: .5;
+    } */
+   
+</style>
+<body>
+<div class='container'>
+<div class='navbar'>
+    <img  src='./assests/spc-logo.png'/>
+	
+</div> 
+     <!--sliders   -->
+ <div id="img_slider" class="slider">
+  <img class="slider_img" src="./assests/slide2Nov2020.jpg" />
+  <span  onclick="changeSlider(-1)" class="left-click" ><</span>
+  <span  onclick="changeSlider(1)" class="right-click">></span>
+ </div>
+
+ <div id="img_slider" class="slider">
+    <img class="slider_img" src="./assests/Slide3-Nov2020.jpg" />
+    <span  onclick="changeSlider(-1)" class="left-click" ><</span>
+    <span  onclick="changeSlider(1)" class="right-click">></span>
+   </div>
+
+   <div id="img_slider" class="slider">
+    <img class="slider_img" src="./assests/Slide4-nov2020.jpg" />
+    <span onclick="changeSlider(-1)"  class="left-click" ><</span>
+    <span  onclick="changeSlider(1)" class="right-click">></span>
+   </div>
+  
+   <!--  -->
+   <div class="about-container">
+  <div class="about">
+      <div class="notification"><marquee>Admission Open – 2021-22: Apply Online</marquee> </div>
+      <div class="about-content">
+          <div class="about-college">
+              <div class="about-college-text">
+                <h1 style="margin-bottom: 20px;">Welcome to St. Philomena College</h1>
+                <p>
+                    St. Philomena College, Puttur is affiliated to Mangalore University and is managed by the Catholic Board of Education, Mangalore. Puttur, until the 1950s was an unheralded place in the coastal Karnataka region. The College was founded in 1958 with express objective of educationally empowering the people of Puttur. The founder Msgr Antony Patrao founded and tended the Institution with motherly care. His example was emulated by his successors. The exemplary achievements of the College have been crowned by the ‘A’ grade accreditation by the “NAAC”
+                </p>
+              </div>
+              <div class="about-college-noticeboard">
+                  <div class="about-college-noticeboard-text">
+                    <h2>Important Notice</h2>
+                    <p>tech pathoms is Winner!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="about-college-pdf">
+              <div  class="pdf">
+                  <img src="./assests/iqac-icon.svg" />
+                  <h2> IQAR</h2>
+              </div>
+
+              <div class="pdf">
+                  <img src="./assests/aqar-icon.svg" />
+                <h2>AQAR</h2>
+            </div>
+            <div class="pdf">
+                <img src="./assests/naac-icon.svg" />
+                <h2>NAAC</h2>
+            </div>
+            <div class="pdf">
+                <img src="./assests/nirf-icon.svg" />
+                <h2> NIRF</h2>
+            </div>
+          </div>
+      </div>
+ </div>
+
+   <div class="course-contianer">
+       <div class="course-heading">
+           <h1 style="margin-bottom: 20px;">Courses that we offer</h1>
+           <p>St. Philomena College offers various undergraduate and post graduate courses. Click on the links below to explore.</p>
+        </div>
+        
+        <div class="course">
+               <div class="card">
+                   <img style=" width: -webkit-fill-available;" src="./assests/UGStudets_2.jpg" alt="">
+                   <div class="card-content">
+                       <h1>Under graduate Courses</h1>
+                       <p>The college offers SIX UG degree programmes under Choice Bases Credit System (CBCS) of Mangalore University. A three year degree programme comprises SIX semesters of 16 weeks each.</p>
+                       <button class="card-button"> Brochure</button>
+                       <button class="card-button">View Courses</button>
+                       <button class="card-button">Apply online</button>
+
+                   </div>
+              </div>
+              <div class="card" style="background-color: #b60c0d;">
+                <img style=" width: -webkit-fill-available;" src="./assests/PG-Block.jpg" alt="">
+                <div class="card-content">
+                    <h1>Post graduate Courses</h1>
+                    <p>The  College  offers  SIX  PG Programmes  under Choice Bases  Credit  System (CBCS) of Mangalore  University. A two year programme  comprises  FOUR Semesters  of  16  weeks  each.</p>
+                    <button class="card-button"> Brochure</button>
+                    <button class="card-button">View Courses</button>
+                    <button class="card-button">Apply online</button>
+
+                </div>
+           </div>
+       </div>
+
+       
+   </div>
+
+   </div>
+
+   <div class="footer">
+      <p style="margin-left:auto;margin-right:auto;">Design and  Developed by Siyabuddeen</p>
+   </div>
+
+</body>
+
+<script>
+    var current_slider=1;
+    showSlider(current_slider)
+       
+    function showSlider(){
+        console.log(current_slider);
+       var images=document.getElementsByClassName('slider')
+       if(current_slider>images.length) current_slider=1;
+       if(current_slider<1) current_slider=images.length
+       for(i=0;i<images.length;i++){
+           images[i].style.display='none'
+       }
+       images[current_slider-1].style.display='block'
+    }
+
+    function changeSlider(n){
+        if(n==undefined) n=1;
+        current_slider+=n;
+        showSlider()
+        // setTimeout(changeSlider,3000)
+    }
+</script>
+</html>
